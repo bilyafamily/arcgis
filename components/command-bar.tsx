@@ -88,6 +88,16 @@ export function CommandBar({
             Dashboard
           </Button>
         </Link>
+        <Link href='/3dmap'>
+          <Button
+            variant='ghost'
+            size='sm'
+            className='text-white hover:bg-green-600'
+          >
+            <BarChart3 className='h-4 w-4 mr-2' />
+            3D Map
+          </Button>
+        </Link>
 
         <Button
           variant='ghost'
@@ -116,7 +126,7 @@ export function CommandBar({
           className='text-white hover:bg-green-600'
         >
           <Layers className='h-4 w-4 mr-2' />
-          Layers
+          Facilities
         </Button>
 
         <Separator orientation='vertical' className='h-6 bg-green-600' />

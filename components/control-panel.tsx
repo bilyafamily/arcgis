@@ -8,6 +8,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Badge } from '@/components/ui/badge';
 import { Search, Filter, ChevronDown, ChevronRight } from 'lucide-react';
 import type { MapFilters } from '@/types';
+import Link from 'next/link';
 
 interface ControlPanelProps {
   filters: MapFilters;
@@ -92,6 +93,16 @@ export function ControlPanel({
   return (
     <div className='w-80 bg-gradient-to-b from-green-700 to-green-900 border-r flex flex-col text-white'>
       {/* Header */}
+      <div className='flex items-center justify-between px-2 py-3'>
+        <Link href={'/'}>
+          <div className='flex items-center space-x-2'>
+            {/* <div className='w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center shadow-sm'>
+              <Image src='logo.png' alt='nmdpra logo' height={20} width={20} />
+            </div> */}
+            <span className='text-lg font-bold text-white ml-2'>Home</span>
+          </div>
+        </Link>
+      </div>
       <div className='p-4 border-b border-green-700 flex items-center justify-between'>
         <h2 className='font-heading font-bold text-lg'>Control Panel</h2>
         <Button

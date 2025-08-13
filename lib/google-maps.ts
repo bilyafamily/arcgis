@@ -13,8 +13,10 @@ export const googleMapsConfig: GoogleMapsConfig = {
     process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ||
     'AIzaSyCDDFLh-vBiMJG0e4KXSsVZPx6H5lhd8UU',
   defaultCenter: {
-    lat: 32.7767, // Center of Texas (oil industry hub)
-    lng: -96.797,
+    // lat: 32.7767,
+    // lng: -96.797,
+    lat: 8.6753,
+    lng: 9.082,
   },
   defaultZoom: 6,
   mapStyles: [
